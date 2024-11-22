@@ -7,12 +7,15 @@ Repositori ini dibuat untuk memenuhi UTS pada mata kuliah Web Programming 1
 Pada repositori ini terdapat `index.html` sebagai inti dari website ini. Konten di `index.html` terbagi menjadi 2, yaitu navigasi dan main content.  
 Navigasi dan main content dinamis, diubah oleh fungsi yang ada pada file `index.js`. Untuk data dan konten html-nya disimpan di file `content.js`.  
 
-## Credit & Notes
+## Credit  
 `Framework CSS: Tailwind`  
 `Notification: SweetAlert2`   
 `Storage: LocalStorage`  
 `Icons: GoogleIcon`  
-`Responsif design: ComingSoon :)`
+
+## Notes  
+Gunakan koneksi internet untuk membukanya, karena proyek ini menggunakan CDN!  
+Website belum menerapkan responsif design :)  
 
 ## Preview
 ### Welcome Page  
