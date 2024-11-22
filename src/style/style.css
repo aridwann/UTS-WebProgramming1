@@ -1,0 +1,19 @@
+.swal2-container {
+  background: #d6d5d2;
+}
+.swal2-title {
+  color: #212529;
+}
+.swal2-confirm {
+  border: 3px solid #212529;
+  background-color: #212529;
+}
+.swal2-cancel {
+  border: 3px solid #212529;
+  color: #212529;
+  background-color: white;
+}
+.swal2-confirm:hover,
+.swal2-cancel:hover {
+  transform: scale(0.9);
+}
