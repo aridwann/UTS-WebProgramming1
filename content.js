@@ -27,7 +27,7 @@ const welcomeContent = `
 `;
 
 const registerContent = `
-    <form action="" class="flex flex-col">
+    <form id="form" class="flex flex-col">
         <legend
         class="self-center text-2xl pb-2 font-bold border-b-4 border-[#212529] w-max"
         >
@@ -66,7 +66,7 @@ const registerContent = `
 `;
 
 const loginContent = `
-    <form action="" class="flex flex-col">
+    <form id="form" action="" class="flex flex-col">
         <legend
         class="self-center text-2xl pb-2 font-bold border-b-4 border-[#212529] w-max"
         >
@@ -87,7 +87,7 @@ const loginContent = `
         </div>
         </div>
         <button
-        class="text-center rounded-2xl w-full py-3 mt-7 bg-[#212529] shadow-md transition-all duration-100 mb-5 text-sm hover:scale-[.97] text-white font-bold" onclick="login()"
+        class="text-center rounded-2xl w-full py-3 mt-7 bg-[#212529] shadow-md transition-all duration-100 mb-5 text-sm hover:scale-[.97] text-white font-bold" onclick="login()" type="submit"
         >
         Login
         </button>
