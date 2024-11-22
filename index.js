@@ -13,18 +13,21 @@ function replaceMain(htmlContent) {
 }
 
 function login() {
-  event.preventDefault();
-  const uname = document.getElementById("login_uname").value;
-  const pw = document.getElementById("login_pw").value;
+  const form = document.getElementById("form");
+  if (form.checkValidity()) {
+    event.preventDefault();
+    const uname = document.getElementById("login_uname").value;
+    const pw = document.getElementById("login_pw").value;
 
-  const user = JSON.parse(localStorage.getItem("user"));
+    const user = JSON.parse(localStorage.getItem("user"));
 
-  if (uname == user.uname && pw == user.pw) {
-    Swal.fire("Login successfully!");
-    navSection.innerHTML = navSudahLogin;
-    mainSection.innerHTML = homeContent;
-  } else {
-    Swal.fire("Cannot find account!");
+    if (uname == user.uname && pw == user.pw) {
+      Swal.fire("Login successfully!");
+      navSection.innerHTML = navSudahLogin;
+      mainSection.innerHTML = homeContent;
+    } else {
+      Swal.fire("Cannot find account!");
+    }
   }
 }
 
@@ -42,18 +45,21 @@ function logout() {
 }
 
 function register() {
-  event.preventDefault();
-  const uname = document.getElementById("reg_uname").value;
-  const email = document.getElementById("reg_email").value;
-  const pw = document.getElementById("reg_pw").value;
+  const form = document.getElementById("form");
+  if (form.checkValidity()) {
+    event.preventDefault();
+    const uname = document.getElementById("reg_uname").value;
+    const email = document.getElementById("reg_email").value;
+    const pw = document.getElementById("reg_pw").value;
 
-  const user = {
-    uname,
-    email,
-    pw,
-  };
+    const user = {
+      uname,
+      email,
+      pw,
+    };
 
-  localStorage.setItem("user", JSON.stringify(user));
-  Swal.fire("User account created!");
-  mainSection.innerHTML = loginContent;
+    localStorage.setItem("user", JSON.stringify(user));
+    Swal.fire("User account created!");
+    mainSection.innerHTML = loginContent;
+  }
 }
